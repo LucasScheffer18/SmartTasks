@@ -66,7 +66,7 @@ public class TelaListagem extends AppCompatActivity {
             cursor.close();
             bancoDados.close();
 
-            TaskAdapter adapter = new TaskAdapter(tasks);
+            TaskAdapter adapter = new TaskAdapter(tasks, false);
             recyclerTasks.setAdapter(adapter);
 
         } catch (RuntimeException e) {

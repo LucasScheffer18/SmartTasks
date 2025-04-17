@@ -29,6 +29,13 @@
             android:textColor="@android:color/black" />
     </LinearLayout>
 
+    <View
+        android:id="@+id/barraRisco"
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:background="#E0E0E0" />
+
     <Button
         android:id="@+id/btnDetalhes"
         android:layout_width="wrap_content"

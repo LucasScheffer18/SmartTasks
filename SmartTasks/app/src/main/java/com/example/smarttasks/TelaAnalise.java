@@ -25,11 +25,11 @@ public class TelaAnalise extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerUrgencia);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        //tasks = UtilsBanco.carregarTarefas(this);
+        tasks = UtilsBanco.carregarTarefas(this);
 
         Collections.sort(tasks, new TaskUrgenciaComparator());
 
-        adapter = new TaskAdapter(tasks);
+        adapter = new TaskAdapter(tasks, true);
         recyclerView.setAdapter(adapter);
     }
 
