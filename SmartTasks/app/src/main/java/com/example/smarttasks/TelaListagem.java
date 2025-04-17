@@ -79,7 +79,7 @@ public class TelaListagem extends AppCompatActivity {
     }
 
     public void voltarTela(View v){
-        Intent i = new Intent(this, TelaListagem.class);
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 }

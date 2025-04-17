@@ -15,6 +15,8 @@
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:orientation="vertical"
+        android:background="@color/fundo"
+        android:backgroundTint="@color/fundo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,8 +26,8 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="#CA0BD3"
-            android:backgroundTint="#CA0BD3"
+            android:background="@color/cabecalho"
+            android:backgroundTint="@color/cabecalho"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
             android:text="Lista de Tarefas"
@@ -37,30 +39,40 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listaDeTarefas"
             android:layout_width="match_parent"
-            android:layout_height="555dp" />
+            android:layout_height="549dp"
+            android:background="@color/text"
+            android:backgroundTint="@color/text"
+            android:textColor="@color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="68dp"
+            android:layout_height="79dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/button6"
                 android:layout_width="160dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
+                android:backgroundTint="@color/botao"
                 android:gravity="center"
                 android:onClick="telaCadastro"
                 android:text="Nova Tarefa"
-                android:textSize="20sp" />
+                android:textColor="@color/black"
+                android:textSize="20dp" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="160dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
+                android:layout_marginLeft="2mm"
+                android:backgroundTint="@color/botao"
                 android:gravity="center"
                 android:onClick="voltarTela"
                 android:text="Voltar"
+                android:textColor="@color/black"
                 android:textSize="20dp" />
         </LinearLayout>
 

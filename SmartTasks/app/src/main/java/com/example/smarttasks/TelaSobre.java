@@ -1,6 +1,8 @@
 package com.example.smarttasks;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,10 @@ public class TelaSobre extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void voltarListagem(View v){
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
+
 }

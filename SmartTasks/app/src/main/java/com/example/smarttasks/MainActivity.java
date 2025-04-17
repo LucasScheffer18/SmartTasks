@@ -57,12 +57,12 @@ public class MainActivity extends AppCompatActivity {
         Intent b = new Intent(this, TelaCompartilha.class);
         startActivity(b);
     }
-
+    */
     public void telaAnalise(View v){
         Intent c = new Intent(this, TelaAnalise.class);
         startActivity(c);
     }
-    */
+
     public void telaSobre(View v){
         Intent d = new Intent(this, TelaSobre.class);
         startActivity(d);

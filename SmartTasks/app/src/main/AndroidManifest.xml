@@ -13,6 +13,12 @@
         android:theme="@style/Theme.SmartTasks"
         tools:targetApi="31">
         <activity
+            android:name=".TelaAnalise"
+            android:exported="false" />
+        <activity
+            android:name=".TelaDetalhes"
+            android:exported="false" />
+        <activity
             android:name=".TelaListagem"
             android:exported="false" />
         <activity

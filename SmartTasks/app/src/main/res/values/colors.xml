@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="botao">#C7CACD</color>
+    <color name="fundo">#DFE0E1</color>
+    <color name="cabecalho">#044490</color>
+    <color name="text">#DFE0E1</color>
+    <color name="blue">#81D4FA</color>
 </resources>
