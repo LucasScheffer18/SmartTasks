@@ -21,6 +21,8 @@ public class TelaDetalhes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_detalhes);
 
+        String origem = getIntent().getStringExtra("origem");
+
         tvTitulo = findViewById(R.id.tvTitulo);
         tvDescricao = findViewById(R.id.tvDescricao);
         tvData = findViewById(R.id.tvData);
@@ -39,10 +41,17 @@ public class TelaDetalhes extends AppCompatActivity {
         }
     }
 
-    public void voltarTela(View v){
-        Intent i = new Intent(this, TelaListagem.class);
+    public void voltarTela(View v) {
+        String origem = getIntent().getStringExtra("origem");
+        Intent i;
+        if ("TelaAnalise".equals(origem)) {
+            i = new Intent(this, TelaAnalise.class);
+        } else {
+            i = new Intent(this, TelaListagem.class);
+        }
         startActivity(i);
     }
+
 
     private String calcularPrioridade(String dataStr) {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());

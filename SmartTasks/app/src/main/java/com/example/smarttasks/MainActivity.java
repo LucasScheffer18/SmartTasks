@@ -2,6 +2,7 @@ package com.example.smarttasks;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -52,12 +53,13 @@ public class MainActivity extends AppCompatActivity {
         Intent a = new Intent(this, TelaListagem.class);
         startActivity(a);
     }
-    /*
+
     public void telaCompartilha(View v){
-        Intent b = new Intent(this, TelaCompartilha.class);
+        String url = "https://presencial.ifrs.edu.br/";
+        Intent b = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(b);
     }
-    */
+
     public void telaAnalise(View v){
         Intent c = new Intent(this, TelaAnalise.class);
         startActivity(c);

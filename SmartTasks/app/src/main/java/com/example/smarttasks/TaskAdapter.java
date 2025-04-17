@@ -74,14 +74,23 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
                 e.printStackTrace();
             }
         } else {
-            barra.setVisibility(View.GONE); // esconde a barra de risco na TelaListagem
+            barra.setVisibility(View.GONE);
         }
 
         holder.btnVer.setOnClickListener(v -> {
             Intent intent = new Intent(context, TelaDetalhes.class);
             intent.putExtra("task", task);
+
+            // Define a origem com base em mostrarPrioridade
+            if (mostrarPrioridade) {
+                intent.putExtra("origem", "TelaAnalise"); // exemplo de nome, pode ser qualquer string que você queira
+            } else {
+                intent.putExtra("origem", "TelaListagem"); // ou "MainActivity", depende da sua tela principal
+            }
+
             context.startActivity(intent);
         });
+
     }
 
 
