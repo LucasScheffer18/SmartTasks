@@ -22,7 +22,11 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerUrgencia"
             android:layout_width="match_parent"
-            android:layout_height="544dp" />
+            android:background="@color/text"
+            android:backgroundTint="@color/text"
+            android:scrollbars="vertical"
+            android:layout_height="544dp"
+            android:textColor="@color/black"/>
 
         <LinearLayout
             android:layout_width="match_parent"

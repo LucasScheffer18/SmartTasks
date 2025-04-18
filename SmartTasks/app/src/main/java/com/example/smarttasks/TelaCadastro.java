@@ -142,10 +142,27 @@ public void cadastrarTarefa(View v){
         }
     }
 }
+    /*
+    public void excluirTodasTarefas(View v) {
+        try {
+            SQLiteDatabase bancoDados = openOrCreateDatabase("agenda", MODE_PRIVATE, null);
+            bancoDados.delete("tarefa", null, null); // Deleta tudo
+            bancoDados.close();
+            Toast.makeText(this, "Todas as tarefas foram excluídas", Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(this, "Erro ao excluir tarefas: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+        <Button
+        android:id="@+id/btnExcluirTudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir Todas"
+        android:onClick="excluirTodasTarefas" />
+    }*/
 
-public void voltarListagem(View v){
-    Intent i = new Intent(this, MainActivity.class);
-    startActivity(i);
-}
+    public void voltarListagem(View v){
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
 
 }

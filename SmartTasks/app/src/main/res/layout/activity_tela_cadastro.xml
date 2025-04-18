@@ -76,6 +76,7 @@
                 android:layout_marginLeft="2mm"
                 android:onClick="voltarListagem"
                 android:text="@string/btn_voltar" />
+
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

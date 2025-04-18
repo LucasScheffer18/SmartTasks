@@ -64,19 +64,6 @@
             android:textSize="25dp" />
 
         <Button
-            android:id="@+id/button3"
-            android:layout_width="350dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="2mm"
-            android:backgroundTint="@color/botao"
-            android:gravity="center"
-            android:onClick="telaCompartilha"
-            android:text="Compartilhar Link"
-            android:textColor="@color/black"
-            android:textSize="25dp" />
-
-        <Button
             android:id="@+id/button4"
             android:layout_width="350dp"
             android:layout_height="75dp"
@@ -86,6 +73,19 @@
             android:gravity="center"
             android:onClick="telaAnalise"
             android:text="Análise Inteligente"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2mm"
+            android:backgroundTint="@color/botao"
+            android:gravity="center"
+            android:onClick="telaCompartilha"
+            android:text="Acessar Site do Curso"
             android:textColor="@color/black"
             android:textSize="25dp" />
 

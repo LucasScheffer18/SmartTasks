@@ -39,7 +39,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listaDeTarefas"
             android:layout_width="match_parent"
-            android:layout_height="549dp"
+            android:layout_height="550dp"
             android:background="@color/text"
             android:backgroundTint="@color/text"
             android:textColor="@color/black" />
